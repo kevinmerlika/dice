@@ -1,0 +1,202 @@
+
+
+.section{
+    display: flex;
+    justify-content: right;
+}
+
+
+.bet{
+    display: flex;
+    background-color: #2c3c46;
+    height: auto;
+    width: 500px;
+    justify-content: right;
+
+    &__submit{
+        margin-top: 50px;
+        height: 50px;
+        border-color: transparent;
+        border-radius: 15px;
+        background-color: #1A2C38;
+        color: white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+        transition: all 0.3s ease-in-out;
+        cursor: url(https://cdn.custom-cursor.com/db/8184/32/neon-money-cursor.png) , default!important;
+
+
+    }
+
+    &__submit:hover{
+        background-color: #4CAF50;
+        color: white;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    &__paragraph{
+        color: #B1BAD3;
+    }
+    &__input{
+        margin-top:10px;
+        border-radius: 12px;
+        width: auto;
+        height: 30px;
+        background-color: #1A2C38;
+        color: #B1BAD3;
+    }
+
+    &__changer{
+        margin-top: 2px;
+        width: auto;
+        display: flex;
+        padding-left: 0 !important;
+        justify-content: left;
+        height: 90%;
+        background-color: #2c3c46;
+        color: #B1BAD3;
+    }
+
+    &__buttons{
+        background-color: #2c3c46;
+        color: #B1BAD3;
+        margin-left: 0;
+        padding-left: 0 !important;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+        border-width: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__buttons:hover{
+        background-color: #1A2C38;
+        color: white;
+        cursor: url(https://cdn.custom-cursor.com/db/8184/32/neon-money-cursor.png) , default!important;
+    }
+
+    &__container{
+        border-radius: 12px;
+        display: block;
+        height: 100%;
+        padding-top: 50px;
+        background-color: #1A2C38;
+
+        
+    }
+
+    &__content{
+        align-items: center;
+        border-radius: 20px;
+        background-color: #2c3c46;
+        margin-top: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+}
+
+
+
+
+
+
+.slider-container{
+
+    display: flex;
+    background-color: #1A2C38;
+    height: 500px;
+    width: 600px;
+    justify-content: right;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+   
+}
+
+.slider-label{
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    width: 30px;
+    border: solid;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-width: 5px;
+    color: white;
+    font-weight: 700;
+    border-color: black;
+    background-color: #2c3c46;
+}
+
+
+.slider {
+    padding-left: 0;
+    padding-right: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  border-color: black;
+  border: solid;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(95, 1, 87), rgb(255, 132, 0));
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider-range{
+    display: flex;
+    width:100% ;
+    margin-top: 50px;
+    background-color: #2c3c46;
+    
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-color: black;
+  border: solid;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white url('https://static.vecteezy.com/system/resources/previews/010/897/312/original/white-realistic-dice-png.png') center/100% no-repeat;
+  cursor: pointer;
+}
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  .slider-value{
+    color: white;
+  }
+
+
+  .rotating-image {
+    animation: rotation 30s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
