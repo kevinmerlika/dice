@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  
+  &:focus {
+    outline: 0;
+  }
+  transition: opacity 2s ease-in-out;
+}
+
+.wrapper--closed{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 4s ease-in-out;
+}
+
+
+.clash-card {
+    
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+
+  img {
+    position: absolute;    
+    top: 0px;
+    left: 30%;
+    transition: all 0.3s ease-in-out;
+    
+  }
+}
+
+.clash-card:hover .clash-card__image{
+    img{
+        transform: scale(1.5);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+
+.clash-card__level {
+    color: black;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+    color: black;
+
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+
+.clash-card__unit-stats {
+    color: black;
+
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  
+  .one-third {
+    color: black;
+
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+    border-right: 1px solid darken(#D04976, 8%);
+  }
+  
+  sup {
+    color: black;
+    position: absolute;
+    bottom: 4px; 
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .stat {
+    color: black;
+
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    color: black;
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+

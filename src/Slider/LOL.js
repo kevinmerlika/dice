@@ -1,0 +1,95 @@
+const lol = [
+    {
+        id: 0,
+        name: 'Belveth 1',
+        src: "/belveth.png",
+        description: "Bel'Veth is a formidable mage in the world of League of Legends. Her abilities revolve around controlling the battlefield with dark magic, allowing her to strike fear into the hearts of her enemies and turn the tide of battle in her favor.",
+        level: 18,
+        multiplier: 1.3,
+        rp: 965,
+        type: "CH",
+        color: '#EC9B3B',
+        width: '120px',
+        height: '260px'
+    },
+    {
+        id: 1,
+        name: 'Ashe',
+        src: "/ashe.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: 1.5,
+        rp: 260,
+        type: "CH",
+        color: '#EE5487',
+        width: '200px',
+        height: '170px'
+    },
+    {
+        id: 2,
+        name: 'Belveth 3',
+        src: "/belveth.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: -1,
+        rp: 965,
+        type: "V",
+        color: '#F6901A',
+        width: '120px',
+        height: '260px'
+    },
+    {
+        id: 3,
+        name: 'Belveth 4',
+        src: "/belveth.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: 0,
+        rp: 965,
+        type: "N",
+        color: '#82BB30',
+        width: '120px',
+        height: '260px'
+    },
+    {
+        id: 3,
+        name: 'Belveth 4',
+        src: "/belveth.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: 0,
+        rp: 965,
+        type: "N",
+        color: '#82BB30',
+        width: '120px',
+        height: '260px'
+    },
+    {
+        id: 4,
+        name: 'Belveth 5',
+        src: "/belveth.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: 1.2,
+        rp: 965,
+        type: "N",
+        color: '#82BB30',
+        width: '120px',
+        height: '260px'
+    },
+    {
+        id: 5,
+        name: 'Urgot',
+        src: "/urgot.png",
+        description: "blablbala",
+        level: 18,
+        multiplier: -0.8,
+        rp: 965,
+        type: "V",
+        color: '#82BB30',
+        width: '140px',
+        height: '200px'
+    },
+   
+  ];
+  export default lol;

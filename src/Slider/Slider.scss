@@ -27,6 +27,12 @@
 
     }
 
+    &__submit--closed{
+        visibility: hidden;
+    }
+
+    
+
     &__submit:hover{
         background-color: #4CAF50;
         color: white;
@@ -196,6 +202,39 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .bonus-container{
+    background-color: #B1BAD3;
+    z-index: 200;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+    bottom: 200px;
+    right: 100px;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .bonus-container--closed{
+    visibility: hidden;
+    display: block;
+    opacity: 0;
+  }
+
+  .game-result{
+
+    position: absolute;
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    top: 20%;
+    right: 20%;
+    
   }
   
 
